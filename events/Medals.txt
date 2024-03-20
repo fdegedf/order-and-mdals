@@ -1,0 +1,27 @@
+﻿add_namespace = medals_event
+
+#Орден Жукову
+country_event = {
+	id = medals_event.1
+	title = medals_event.1.t
+	desc = medals_event.1.d
+	picture = GFX_report_event_japanese_transport_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = medals_event.1.a
+		ai_chance = { factor = 25 }
+		add_political_power = -2000
+		add_trait = {
+			character = SOV_georgy_zhukov
+			slot = army
+			trait = orden_pobeda
+		}
+	}
+	
+	option = {
+		name = medals_event.1.b
+		ai_chance = { factor = 75 }
+	}
+}

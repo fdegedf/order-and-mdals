@@ -1,0 +1,12 @@
+on_actions = {
+	
+	#При старте происходит
+	on_startup = {
+		effect = {
+			#Происходит только в СССР
+			SOV = {
+				country_event = { id = medals_event.1 }
+			}
+		}
+	}
+}
